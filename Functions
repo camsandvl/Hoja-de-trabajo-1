@@ -1,1 +1,13 @@
 
+public class Function implements IBlender {
+    private int speed;
+    private boolean isOn;
+    private boolean isFull;
+
+    // Constructor
+    Public Blender() {
+        this.speed = 0; // Licuadora apagada
+        this.isOn = false;
+        this.isFull = false;
+    }
+
