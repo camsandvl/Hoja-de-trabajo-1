@@ -1,1 +1,23 @@
+import java.util.Scanner;
 
+public class Main {
+    public static void main(String[] args) {
+        Blender myBlender = new Blender();
+        Scanner scanner = new Scanner(System.in);
+        int choice;
+//bucle para mostrar el menu and to show the option
+//basically its wha the user will seee
+
+        do {
+            System.out.println("\n--- Menú de la Licuadora ---");
+            System.out.println("1. Encender la licuadora");
+            System.out.println("2. Llenar la licuadora");
+            System.out.println("3. Aumentar velocidad");
+            System.out.println("4. Reducir velocidad");
+            System.out.println("5. Consultar velocidad");
+            System.out.println("6. Consultar si está llena");
+            System.out.println("7. Vaciar la licuadora");
+            System.out.println("8. Apagar la licuadora");
+            System.out.println("9. Salir");
+            System.out.print("Elige una opción: ");
+            choice = scanner.nextInt();
