@@ -21,3 +21,23 @@ public class Main {
             System.out.println("9. Salir");
             System.out.print("Elige una opción: ");
             choice = scanner.nextInt();
+
+            switch (choice) {
+                case 1 -> myBlender.turnOn();
+                case 2 -> myBlender.Fill();
+                case 3 -> myBlender.SpeedUp();
+                case 4 -> myBlender.SpeedDown();
+                case 5 -> System.out.println("Velocidad actual: " + myBlender.GetSpeed());
+                case 6 -> System.out.println("¿Está llena? " + (myBlender.IsFull() ? "Sí" : "No"));
+                case 7 -> myBlender.Empty();
+                case 8 -> myBlender.turnOff();
+                case 9 -> System.out.println("Saliendo del programa...");
+                default -> System.out.println("Opción inválida. Intenta nuevamente.");
+            }
+        } while (choice != 9);
+
+        scanner.close();
+    }
+}
+
+
