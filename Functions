@@ -71,3 +71,8 @@ public class Functions implements IBlender {
             System.out.println ("Ya se alcanzó el mínimo de velocidad");
         }
     }
+
+    @Override 
+    public int GetSpeed() {
+        return speed;
+    }
